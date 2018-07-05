@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Calc.oneArgument
 {
-    class Cos
+    public class Cos: IOneArgumentCalculator
     {
+        public double Calculate(double thirdArgument)
+        {
+            return Math.Cos(thirdArgument);
+        }
     }
 }

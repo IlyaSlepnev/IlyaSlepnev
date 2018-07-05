@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Calc.oneArgument
 {
-    class OneArgumentCalculator
+    public interface IOneArgumentCalculator
     {
+        double Calculate(double thirdValue);
     }
 }

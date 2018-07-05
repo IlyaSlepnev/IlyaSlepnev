@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Calc.oneArgument
 {
-    class Class1
+    public class Sin: IOneArgumentCalculator
     {
+        public double Calculate(double thirdArgument)
+        {
+            return Math.Sin(thirdArgument);
+        }
     }
 }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Calc.oneArgument
 {
-    class Tg
+    public class Tan: IOneArgumentCalculator
     {
+        public double Calculate(double thirdArgument)
+        {
+            return Math.Tan(thirdArgument);
+        }
     }
 }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Calc.oneArgument
 {
-    class Radical
+    public class Radical: IOneArgumentCalculator
     {
+        public double Calculate(double radical)
+        {
+            return System.Math.Sqrt(radical);
+        }
     }
 }
