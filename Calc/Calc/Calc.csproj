@@ -8,9 +8,10 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Calc</RootNamespace>
     <AssemblyName>Calc</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -51,21 +52,21 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="oneArgument\Cos.cs" />
-    <Compile Include="oneArgument\Sin.cs" />
+    <Compile Include="oneArgument\Cosine.cs" />
+    <Compile Include="oneArgument\Sinus.cs" />
     <Compile Include="oneArgument\IOneArgumentCalculator.cs" />
     <Compile Include="oneArgument\OneArgumentFactory.cs" />
     <Compile Include="oneArgument\Radical.cs" />
-    <Compile Include="oneArgument\Tan.cs" />
+    <Compile Include="oneArgument\Tangent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="twoArguments\Degree.cs" />
     <Compile Include="twoArguments\DegreeFraction.cs" />
-    <Compile Include="twoArguments\Div.cs" />
+    <Compile Include="twoArguments\Division.cs" />
     <Compile Include="twoArguments\ITwoArgumentsCalculator.cs" />
     <Compile Include="twoArguments\Log.cs" />
     <Compile Include="twoArguments\Minus.cs" />
-    <Compile Include="twoArguments\Multi.cs" />
+    <Compile Include="twoArguments\Multiplication.cs" />
     <Compile Include="twoArguments\Plus.cs" />
     <Compile Include="twoArguments\TwoArgumentsFactory.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -79,6 +80,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

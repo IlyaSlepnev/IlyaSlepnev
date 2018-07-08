@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calc.oneArgument
 {
@@ -13,9 +9,9 @@ namespace Calc.oneArgument
             switch (calculatorname)
             {
                 case "radicalSolution": return new Radical();
-                case "sinSolution": return new Sin();
-                case "cosSolution": return new Cos();
-                case "tanSolution": return new Tan();
+                case "sinSolution": return new Sinus();
+                case "cosSolution": return new Сosine();
+                case "tanSolution": return new Tangent();
                 default:
                     throw new Exception("Неизвестная операция");
             }

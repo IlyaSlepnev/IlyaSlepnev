@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calc.oneArgument
 {
-    public class Cos: IOneArgumentCalculator
+    public class Сosine: IOneArgumentCalculator
     {
         public double Calculate(double thirdArgument)
         {
