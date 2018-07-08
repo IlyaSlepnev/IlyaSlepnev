@@ -1,5 +1,6 @@
 ﻿using System;
 using Calc.oneArgument;
+using Nunit.Framework;
 
 namespace CalcTests.FactoryTest
 {
