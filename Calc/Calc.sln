@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2035
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc", "Calc\Calc.csproj", "{8E0FA392-8A88-47C4-96B9-6FA02BD807ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcTests", "CalcTests\CalcTests.csproj", "{BEF02E6A-431C-478A-995D-59B1293369A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{8E0FA392-8A88-47C4-96B9-6FA02BD807ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E0FA392-8A88-47C4-96B9-6FA02BD807ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E0FA392-8A88-47C4-96B9-6FA02BD807ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEF02E6A-431C-478A-995D-59B1293369A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEF02E6A-431C-478A-995D-59B1293369A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEF02E6A-431C-478A-995D-59B1293369A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEF02E6A-431C-478A-995D-59B1293369A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
