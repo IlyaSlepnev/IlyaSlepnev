@@ -1,0 +1,20 @@
+﻿using Calc.oneArgument;
+using NUnit.Framework;
+
+namespace CalcTests.oneArgumentTest
+{
+    [TestFixture]
+    public class SinusTest
+    {
+        [TestCase(0, 0)]
+        [TestCase(90, 1)]
+        [TestCase(180, 0)]
+        public void CalculateSinTestStrong(double firstValue, double expected)
+        {
+            IOneArgumentCalculator calculator = new Sinus();
+            double result = calculator.Calculate(firstValue);
+            Assert.AreEqual(expected, result);
+
+        }
+    }
+}
