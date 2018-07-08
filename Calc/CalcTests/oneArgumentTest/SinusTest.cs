@@ -9,7 +9,7 @@ namespace CalcTests.oneArgumentTest
         [TestCase(0, 0)]
         [TestCase(90, 1)]
         [TestCase(180, 0)]
-        public void CalculateSinTestStrong(double firstValue, double expected)
+        public void CalculateSinTest(double firstValue, double expected)
         {
             IOneArgumentCalculator calculator = new Sinus();
             double result = calculator.Calculate(firstValue);

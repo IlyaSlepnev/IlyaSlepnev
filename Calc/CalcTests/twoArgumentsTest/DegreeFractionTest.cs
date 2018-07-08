@@ -1,12 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Calc.twoArguments;
+using NUnit.Framework;
 
 namespace CalcTests.twoArgumentsTest
 {
-    class DegreeFractionTest
+    [TestFixture]
+    public class DegreeFractionTest
     {
+        [TestCase(5, 2, 2.5)]
+        [TestCase(10, 2, 5)]
+        [TestCase(15, 2, 7.5)]
+        public void CalculateDegreeFractionTest(double firstValue, double secondValue, double expected)
+        {
+            ITwoArgumentsCalculator calculator = new DegreeFraction();
+            double result = calculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, result);
+        }
     }
 }

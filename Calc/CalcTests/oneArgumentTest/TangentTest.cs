@@ -9,7 +9,7 @@ namespace CalcTests.oneArgumentTest
         [TestCase(0, 0)]
         [TestCase(0,180)]
         [TestCase(0,360)]
-        public void CalculateTanTestStrong(double firstValue, double expected)
+        public void CalculateTanTest(double firstValue, double expected)
         {
             IOneArgumentCalculator calculator = new Tangent();
             double result = calculator.Calculate(firstValue);

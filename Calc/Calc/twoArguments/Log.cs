@@ -6,7 +6,7 @@ namespace Calc.twoArguments
     {
         public double Calculate(double firstArgument, double secondArgument)
         {
-            return System.Math.Log(firstArgument, secondArgument);
+            return Math.Log(firstArgument, secondArgument);
         }
     }
 }

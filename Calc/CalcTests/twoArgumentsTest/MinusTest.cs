@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Calc.twoArguments;
+using NUnit.Framework;
 
 namespace CalcTests.twoArgumentsTest
 {
-    class MinusTest
+    [TestFixture]
+    public class MinusTest
     {
+        [TestCase(7, 0, 7)]
+        [TestCase(5, 4, 1)]
+        [TestCase(6, 4, 2)]
+        public void CalculateMinTest(double firstValue, double secondValue, double expected)
+        {
+            ITwoArgumentsCalculator calculator = new Minus();
+            double result = calculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, result);
+
+        }
     }
 }

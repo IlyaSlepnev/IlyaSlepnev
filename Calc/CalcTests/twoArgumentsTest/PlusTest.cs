@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Calc.twoArguments;
+using NUnit.Framework;
 
 namespace CalcTests.twoArgumentsTest
 {
-    class PlusTest
+    [TestFixture]
+    public class PlusTest
     {
+        [TestCase(7, 0, 7)]
+        [TestCase(3, 4, 7)]
+        [TestCase(14, -7, 7)]
+        public void CalculatePlusTest(double firstValue, double secondValue, double expected)
+        {
+            ITwoArgumentsCalculator calculator = new Plus();
+            double result = calculator.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, result);
+
+        }
     }
 }
