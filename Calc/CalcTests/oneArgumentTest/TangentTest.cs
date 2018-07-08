@@ -7,8 +7,8 @@ namespace CalcTests.oneArgumentTest
     public class TangentTest
     {
         [TestCase(0, 0)]
-        [TestCase(0,180)]
-        [TestCase(0,360)]
+        [TestCase(0, 180)]
+        [TestCase(0, 360)]
         public void CalculateTanTest(double firstValue, double expected)
         {
             IOneArgumentCalculator calculator = new Tangent();
@@ -17,3 +17,4 @@ namespace CalcTests.oneArgumentTest
 
         }
     }
+}

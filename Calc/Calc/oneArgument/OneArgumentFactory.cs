@@ -4,6 +4,13 @@ namespace Calc.oneArgument
 {
     public class OneArgumentFactory
     {
+        /// <summary>
+        /// Switch One Argument Calculator
+        /// </summary>
+        /// <param name="calculatorname"></param>
+        /// <returns>
+        /// Method
+        /// </returns>
         public static IOneArgumentCalculator CreateCalculator(string calculatorname)
         {
             switch (calculatorname)

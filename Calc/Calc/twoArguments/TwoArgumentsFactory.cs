@@ -3,7 +3,14 @@
 namespace Calc.twoArguments
 {
     public class TwoArgumentsFactory
-    { 
+    {
+         /// <summary>
+         /// Switch One Argument Calculator
+         /// </summary>
+         /// <param name="calculatorname"></param>
+         /// <returns>
+         /// Method
+         /// </returns>
     public static ITwoArgumentsCalculator CreateCalculator(string calculatorname)
     {
         switch (calculatorname)
