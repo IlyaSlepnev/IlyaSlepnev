@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FactoryTest\OneArgumentFactoryTest.cs" />
+    <Compile Include="FactoryTest\TwoArgumentsFactoryTest.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
